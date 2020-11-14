@@ -1,7 +1,8 @@
+.attribution { font-size: 11px; text-align: center; position: absolute; bottom: 0; }
+.attribution a { color: hsl(228, 45%, 44%); }
 body {
     font-family: 'Kumbh Sans', sans-serif;
     color: hsl(229, 23%, 23%);
-    margin: 0;
     background: no-repeat -442px -402px / 664px  url('images/bg-pattern-top.svg'),
                 no-repeat right -450px bottom -350px / 664px url('images/bg-pattern-bottom.svg'),
               hsl(185, 75%, 39%);
@@ -9,10 +10,19 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+@media(min-width: 376px) {
+    body {
+        background: no-repeat -260px -500px / 964px  url('images/bg-pattern-top.svg'),
+                no-repeat right -250px bottom -650px / 964px url('images/bg-pattern-bottom.svg'),
+              hsl(185, 75%, 39%);
+    }
 }
 
 .profile-card {
-    margin: 24px;
+    width: 327px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
